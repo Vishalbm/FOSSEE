@@ -1,4 +1,8 @@
-function [l,m]=euclidfactors(a,b)//let the decimation and interpolation factors be a and b.
+//name:Vishal B M
+//function:euclidfactors
+//input:a,b.The interpolation and decimation factors
+//output:l,m.The euclid factors computed.
+function [l,m]=euclidfactors(a,b)
     [lhs,rhs]=argn(0);
     if rhs~=2 then
         disp("invalid number of inputs");
