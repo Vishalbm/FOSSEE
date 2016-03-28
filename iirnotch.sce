@@ -1,3 +1,7 @@
+//name:Vishal B M
+//function:iirnotch
+//inputs:w0,b,a;w0=frequency to be cutout,b =bandwidth at 'a' db.
+//outputs:numerator and denominator array of coefficients.
 function [N,D]=iirnotch(w0,b,a)
     [lhs,rhs]=argn(0);
     c=0;
