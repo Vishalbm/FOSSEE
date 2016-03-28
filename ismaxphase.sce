@@ -1,3 +1,7 @@
+//name:Vishal B M
+//function:ismaxphase;
+//input:numerator coefficients in the standard form of the transfer function to be examined if it is a maxphase transfer function.
+//output:tells whether it is a maxphase transfer function.
 function y=ismaxphase(b)//taking numerator coefficients as input
     if argn(2)==0 then//checking if the input is zero
         error("invalid input");
