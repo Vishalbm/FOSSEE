@@ -11,8 +11,9 @@ function [N,D]=iirnotch(w0,b,a)
     if(w0<=0 | w0>=1 | b<0 | b>1) then//checks for a valid input
         error("w0  and b should be between 0 and 1")
     end
-    if ~isnum(a) & ~and(size(a))==1 then//check if the input is of correct type
+    if isnan(a) & ~and(size(a))==1 then//check if the input is of correct type
         error("wrong type of input");
+    end    
     c=abs(a); //take only positive numbers
       
     b = b*%pi;//convert b and w0 to their actual values
